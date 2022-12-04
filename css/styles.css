@@ -154,7 +154,9 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
+
 /* HERO */
+
 .hero {
   background: var(--section-hero-background);
   text-align: center;
@@ -289,7 +291,9 @@ body {
   padding: 0;
   margin: 0;
 }
+
 /*TEAM*/
+
 .team {
   background: var(--team-content-background);
 }
@@ -336,7 +340,9 @@ body {
   text-align: center;
   margin-bottom: 16px;
 }
+
 /*SOCIAL LINK*/
+
 .team-icons-list {
   display: flex;
   justify-content: center;
@@ -367,6 +373,7 @@ body {
   background-color: var(--accent-color);
   color: #ffffff;
 }
+
 /*ПОСТІЙНІ КЛІЄНТИ*/
 
 .customers-list {
@@ -615,7 +622,7 @@ img {
   fill: currentColor;
 }
 .modal-footer {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .footer-form {
   display: flex;
@@ -657,6 +664,7 @@ img {
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0;
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -752,22 +760,27 @@ img {
 .modal-icon {
   position: absolute;
   left: 12px;
-  top: 30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .input-label {
+  display: block;
+  position: relative;
+  width: 22px;
+  height: 14px;
   font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
   color: var(--primary-text-color);
-}
-.modal-field {
-  margin-top: 25px;
+  margin-bottom: 4px;
 }
 .modal-input {
   width: 100%;
   height: 40px;
-  margin-top: 4px;
+  font-size: 14px;
   border-radius: 5px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   padding-left: 42px;
   color: var(--tittle-text-color);
   outline: transparent;
@@ -800,11 +813,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.comment {
-  width: 100%;
-  height: 120px;
-  margin-top: 28px;
-}
 .checkbox-text {
   font-style: normal;
   font-weight: 400;
@@ -813,9 +821,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
-  margin-left: 13px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 .checkbox-text span {
   width: 16px;
@@ -843,7 +852,6 @@ img {
   color: var(--accent-color);
 }
 .checkbox-icon {
-  border: 2px solid var(--tittle-text-color);
   border-radius: 2px;
   fill: var(--primary-white-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -859,21 +867,23 @@ img {
   cursor: pointer;
   text-decoration-line: underline;
 }
-.modal-btn {
-  display: flex;
-  justify-content: center;
-}
 .submit-btn {
-  width: 200px;
+  min-width: 200px;
   height: 50px;
-  left: 700px;
-  top: 712px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--primary-white-color);
   border: 0;
   cursor: pointer;
+  margin: 0 auto;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -882,87 +892,4 @@ img {
 .submit-btn:hover,
 .submit-btn:focus {
   background-color: var(--background-btn);
-}
-.send {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--background-doc);
-}
-.sign-tittle {
-  display: flex;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.1428;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-  outline: transparent;
-  margin-bottom: 20px;
-  margin-left: 93px;
-}
-.send-form {
-  display: flex;
-  gap: 12px;
-}
-.footer-user-mail {
-  min-width: 358px;
-  height: 50px;
-  background: var(--section-footer-background);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-user-mail:hover,
-.footer-user-mail:focus {
-  border-color: var(--accent-color);
-}
-.footer-user-mail::placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.btn-send {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  border: 0;
-  border-radius: 4px;
-  height: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 28px;
-  padding-right: 62px;
-  margin: 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-send:hover,
-.btn-send:focus {
-  background: var(--background-btn);
-}
-.icon-send {
-  position: relative;
-  fill: currentColor;
-  margin-left: 10px;
 }

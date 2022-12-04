@@ -27,6 +27,7 @@
   </head>
   <body>
     <!--Верхня лінія-->
+
     <header class="page-header">
       <div class="container header-container">
         <a hreaf="./index.html" class="logo-header"
@@ -75,6 +76,7 @@
     </header>
     <main>
       <!--ШАПКА-->
+
       <section class="hero">
         <div class="container">
           <h1 class="hero-title animate__animated animate__flipInX">
@@ -85,7 +87,9 @@
           </button>
         </div>
       </section>
+
       <!--ОСОБЛИВОСТІ-->
+
       <section class="about section">
         <div class="container">
           <h2 class="visually-hidden" hidden>Особливості</h2>
@@ -140,7 +144,9 @@
           </ul>
         </div>
       </section>
+
       <!--ЧИМ МИ ЗАЙМАЄМОСЬ-->
+
       <section class="examples section">
         <div class="container">
           <h2 class="title" data-aos="flip-up">Чим ми займаємося</h2>
@@ -181,7 +187,9 @@
           </ul>
         </div>
       </section>
+
       <!--НАША КОМАНДА-->
+
       <section class="team section">
         <div class="container">
           <h2 class="title" data-aos="flip-up">Наша команда</h2>
@@ -357,7 +365,9 @@
           </ul>
         </div>
       </section>
+
       <!--ПОСТІЙНІ КЛІЄНТИ-->
+
       <section class="section customers">
         <div class="container">
           <h2 class="title" data-aos="flip-up">Постійні клієнти</h2>
@@ -438,7 +448,9 @@
         </div>
       </section>
     </main>
-    <!--КОНТАКТИ-->
+
+    <!--КОНТАКТИ FOOTER-->
+
     <footer class="footer">
       <div class="container">
         <div class="wrapper">
@@ -522,6 +534,9 @@
         </div>
       </div>
     </footer>
+
+    <!--МОДАЛЬНЕ ВІКНО-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
@@ -550,6 +565,7 @@
             <input
               type="tel"
               name="user-tel"
+              id="user-tel"
               class="modal-input"
               placeholder=""
               required
@@ -563,6 +579,7 @@
             <input
               type="email"
               name="user-email"
+              id="user-email"
               class="modal-input"
               placeholder=""
               required
@@ -571,38 +588,32 @@
               <use href="./img/icons.svg#icon-email-black-18dp-1-2"></use>
             </svg>
           </div>
-          <div class="modal-field">
-            <label for="user-text" class="input-label">Коментар</label>
-            <textarea
-              name="user-text"
-              id="user-text"
-              class="modal-comment"
-              placeholder="Введіть текст"
-            ></textarea>
-            <div class="modal-field">
-              <label for="policy" class="checkbox-text">
-                <input
-                  class="policy-checkbox visually-hidden"
-                  type="checkbox"
-                  name="policy"
-                  placeholder=""
-                  id="policy"
-                />
-                <span>
-                  <svg class="checkbox-icon" width="16" height="15">
-                    <use href="./img/icons.svg#icon-Vector-2-2"></use>
-                  </svg>
-                </span>
-                Погоджуюся з розсилкою та приймаю
-                <a class="input-policy">Умови договору</a>
-              </label>
-            </div>
-            <div class="modal-btn">
-              <button type="submit" title="відправити" class="submit-btn">
-                <span class="send">Відправити</span>
-              </button>
-            </div>
-          </div>
+          <label for="user-text" class="input-label">Коментар</label>
+          <textarea
+            name="user-text"
+            id="user-text"
+            class="modal-comment"
+            placeholder="Введіть текст"
+          ></textarea>
+          <label for="policy" class="checkbox-text">
+            <input
+              class="policy-checkbox visually-hidden"
+              type="checkbox"
+              name="policy"
+              placeholder=""
+              id="policy"
+            />
+            <span>
+              <svg class="checkbox-icon" width="16" height="15">
+                <use href="./img/icons.svg#icon-Vector-2-2"></use>
+              </svg>
+            </span>
+            Погоджуюся з розсилкою та приймаю
+            <a class="input-policy">Умови договору</a>
+          </label>
+          <button type="submit" title="відправити" class="submit-btn">
+            Відправити
+          </button>
         </form>
       </div>
     </div>
