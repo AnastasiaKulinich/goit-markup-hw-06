@@ -775,6 +775,10 @@ img {
   color: var(--primary-text-color);
   margin-bottom: 4px;
 }
+.input-wrapper {
+  position: relative;
+  margin-bottom: 11px;
+}
 .modal-input {
   width: 100%;
   height: 40px;
