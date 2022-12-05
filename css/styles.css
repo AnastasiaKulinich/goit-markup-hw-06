@@ -766,7 +766,6 @@ img {
 .input-label {
   display: block;
   position: relative;
-  width: 22px;
   height: 14px;
   font-weight: 400;
   font-size: 12px;
@@ -777,7 +776,6 @@ img {
 }
 .input-wrapper {
   position: relative;
-  margin-bottom: 11px;
 }
 .modal-input {
   width: 100%;
@@ -827,8 +825,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 .checkbox-text span {
   width: 16px;
